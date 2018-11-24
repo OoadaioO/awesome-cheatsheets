@@ -803,6 +803,22 @@ function ccat() {
     fi
 }
 
+# ssh 自动登录 参数(密码,用户名@IP)
+function auto_login_ssh(){
+    #expect 自动化交互命令
+    #set timeout 设置超时
+    #return $? 返回上一个命令执行结果, 0:正常 正值:异常
+    expect -c "
+    set timeout 3600
+    spawn ssh -o StrictHostKeyChecking=no $2;
+    expect \"password:\"
+    send "$1\r"
+    interact
+    }
+    "
+    return $?
+}
+
 
 ##############################################################################
 # 好玩的配置

@@ -90,3 +90,25 @@ arr.reduce(callback[, initialValue])                 // Apply a function against
 arr.reduceRight(callback[, initialValue])            // Apply a function against an accumulator and each value of the array (from right-to-left) as to reduce it to a single value.
 arr.some(callback[, initialValue])                   // Returns true if at least one element in this array satisfies the provided testing function.
 arr.values()                                         // Returns a new Array Iterator object that contains the values for each index in the array.
+
+
+/* *******************************************************************************************
+ * 函数
+ * ******************************************************************************************* */
+
+//箭头函数
+var f = x => x*x;                                     // 定义箭头函数
+var f = x => { return x*x; }                          // 定义箭头函数
+var f = (x,y,...rest){return x+y;}                    // 定义箭头函数
+
+
+
+
+
+
+
+
+
+
+
+
