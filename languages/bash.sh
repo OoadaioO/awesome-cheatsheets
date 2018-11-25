@@ -152,6 +152,7 @@ pstree                    # 树形列出所有进程，pstree 默认一般不带
 pstree {user}             # 进程树列出某用户的进程
 pstree -u                 # 树形列出所有进程以及所属用户
 pgrep {procname}          # 搜索名字匹配的进程的 pid，比如 pgrep apache2
+pgrep -f {procname}       # 搜索名字匹配的进程的 pid 比如 pgrep -f jekyll 
 
 kill {pid}                # 结束进程
 kill -9 {pid}             # 强制结束进程，9/SIGKILL 是强制不可捕获结束信号
@@ -525,6 +526,7 @@ eval $script                       # 对 script 变量中的字符串求值（�
 ##############################################################################
 
 cmd1 | cmd2                        # 管道，cmd1 的标准输出接到 cmd2 的标准输入
+xargs                              # 将标准输入数据转换成命令行参数
 < file                             # 将文件内容重定向为命令的标准输入
 > file                             # 将命令的标准输出重定向到文件，会覆盖文件
 >> file                            # 将命令的标准输出重定向到文件，追加不覆盖

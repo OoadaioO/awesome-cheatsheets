@@ -1,0 +1,10 @@
+"语法高亮
+syntax on
+
+"tab用4个空格
+set tabstop=4
+
+"tab用空格替代
+set expandtab
+
+
