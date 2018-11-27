@@ -186,12 +186,13 @@ wait                      # 等待所有后台进程任务结束
 # 常用命令：SSH / 系统信息 / 网络
 ##############################################################################
 
-ssh user@host             # 以用户 user 登陆到远程主机 host
-ssh -p {port} user@host   # 指定端口登陆主机
-ssh-copy-id user@host     # 拷贝你的 ssh key 到远程主机，避免重复输入密码
-scp {fn} user@host:path   # 拷贝文件到远程主机
-scp user@host:path dest   # 从远程主机拷贝文件回来
-scp -P {port} ...         # 指定端口远程拷贝文件
+ssh user@host                       # 以用户 user 登陆到远程主机 host
+ssh -p {port} user@host             # 指定端口登陆主机
+ssh -i {test.pem} user@host         # pem方式登录主机 
+ssh-copy-id user@host               # 拷贝你的 ssh key 到远程主机，避免重复输入密码
+scp {fn} user@host:path             # 拷贝文件到远程主机
+scp user@host:path dest             # 从远程主机拷贝文件回来
+scp -P {port} ...                   # 指定端口远程拷贝文件
 
 uname -a                  # 查看内核版本等信息
 man {help}                # 查看帮助
