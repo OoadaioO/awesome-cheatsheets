@@ -53,3 +53,10 @@ shell wm density          # 查看屏幕密度
 https://developer.android.google.cn/studio/command-line/adb.html
 
 
+# 文件刷新
+adb shell am broadcast -a android.intent.action.MEDIA_SCANNER_SCAN_FILE -d file:///sdcard/Pictures/xx.png
+
+# 目录刷新,注意权限
+adb shell am broadcast -a android.intent.action.MEDIA_MOUNTED -d file:///sdcard/Pictures
+
+
