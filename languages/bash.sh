@@ -205,6 +205,7 @@ ssh-copy-id user@host               # 拷贝你的 ssh key 到远程主机，避
 scp {fn} user@host:path             # 拷贝文件到远程主机
 scp user@host:path dest             # 从远程主机拷贝文件回来
 scp -P {port} ...                   # 指定端口远程拷贝文件
+scp -i {.pem} path user@host:path   # 使用密钥上传文件
 
 uname -a                  # 查看内核版本等信息
 man {help}                # 查看帮助
