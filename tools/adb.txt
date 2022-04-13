@@ -59,4 +59,5 @@ adb shell am broadcast -a android.intent.action.MEDIA_SCANNER_SCAN_FILE -d file:
 # 目录刷新,注意权限
 adb shell am broadcast -a android.intent.action.MEDIA_MOUNTED -d file:///sdcard/Pictures
 
-
+# 获取页面树
+adb shell uiautomator dump
