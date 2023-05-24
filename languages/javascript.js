@@ -120,8 +120,21 @@ new Date().toString()
 new Date('yyyy/mm/dd HH:MM:SS GMT+时区').getTime()
 new Date('2021/12/30 12:00:00 GMT+8').getTime()
 
+// 设置日期时间为当日0点 - utc时间
+const d = new Date()
+d.setHours(0,0,0,0)
 
+// 将日期格式化成本地日期输出
+new Date().toLocaleDateString()
+// '5/24/2023'
 
+// 日期格式化为本地时间字符串
+new Date().toLocaleTimeString()
+// '12:00:00 AM'
+
+// 日期格式化成本地日期时间字符串
+new Date().toLocaleString()
+// '5/24/2023, 12:00:00 AM'
 
 
 
